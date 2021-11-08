@@ -1,71 +1,132 @@
-// Exercise List (1)
+// 1. What number's bigger?
+// Write an if statement that compares two numbers (call them numOne and numTwo).
 
-//     1. Convert a string into a number?
+// If numOne is bigger, it should log to the console "numOne (THE VALUE) is bigger than numTwo (THE VALUE)".
 
-//     let num = "4";
-//     num = parseInt(num);
-//     console.log(num);
+// If numTwo is bigger, it should log to the console "numOne (THE VALUE) is smaller than numTwo (THE VALUE)".
 
-//     Bonus:
+// If they are even, it should log to the console "numOne (THE VALUE) is equal to numTwo (THE VALUE)".
 
-//     let num2 = "5.6"
-//     num2 = parseFloat(num2)
-//     console.log(num2);
+// Bonus: Get the two numbers using prompt!
 
-//     2. Convert a number into a string?
+// Bonus: Use interpolation (you may need to look up template literals)
 
-//     let num = 15;
-//     console.log(typeof num);
-//     num = num.toString();
-//     console.log(num);
-//     console.log(typeof num);
+// let numOne = prompt("Enter the first number: ");
+// let numTwo = prompt("Enter the second number: ");
 
-//     3. Make a string UPPERCASED?
+// if (numOne > numTwo) {
+//   console.log(numOne + " is bigger than " + numTwo);
+// } else if (numOne < numTwo) {
+//   console.log(numOne + " is smaller than " + numTwo);
+// } else {
+//   console.log(numOne + " is equal to " + numTwo);
+// }
 
-//     let greet = "hello";
-//     greet = greet.toUpperCase();
-//     console.log(greet);
+// 2. Driving Age
+// Store the user's name and age.
 
-//     Bonus: Make just the first character uppercased!
+// If the age is less than 16, log "Sorry, you can't drive yet!"
+// If the age is greater than or equal to 16, log "Drive into the sunset!"
+// Bonus: Get the name and age using prompt!
 
-//     let firstLetter = greet.charAt(0);
-//     console.log(firstLetter);
-//     firstLetter = firstLetter.toUpperCase();
-//     console.log(firstLetter);
+// Bonus: If the user can't drive yet, tell them how many years they have before they can drive (e.g. "Sorry, you still have 4 years before you can drive")
 
-//     4. Get the second character out of a string?
+// let name = prompt("Please enter your name");
+// let age = prompt("Hi, " + name + "! Please, enter your age: ");
 
-//     let word = "hello";
-//     secondLetter = word.charAt(1);
-//     console.log(secondLetter);
+// let drivingAge = 16;
 
-//     5. Use concatenation to combine two strings (e.g. join "Hello " and "World")?
+// let dif = drivingAge - age;
 
-//     let firstName = "Jacques";
-//     let lastName = "Cousteau";
-//     let fullName = firstName  + " " + lastName
-//     console.log(fullName);
+// console.log(dif);
 
-//     Bonus: Try using the prompt method to get the user's firstName and lastName - then combine them
+// if (age < drivingAge) {
+//   console.log("Sorry, you still have " + dif + " year(s) before you can drive");
+//   alert("Sorry, you still have " + dif + " year(s) before you can drive");
+// } else if (age >= drivingAge) {
+//   console.log("Drive into the sunset!");
+//   alert("Drive into the sunset!");
+// }
 
-//     let userName = prompt("Enter your first name:");
-//     let userLastName = prompt("Enter your last name:");
-//     let fullName = userName + " " + userLastName;
-//     console.log(fullName);
+// 3. Say Hi!
+// Store a language (e.g. "English", "French" or "Malaysian")
 
-//     6. Get a number and square it (e.g. 4 squared is 16)?
+// If the language is "English", log "Hi"
+// If the language is "French", log "Bonjour"
+// If the language is "Norwegian", log "Hallo"
+// If the language is "Turkish", log "Merhaba"
+// Plus, any other language you want to add!
 
-//     let num = 16;
-//     num = Math.cbrt(num);
-//     console.log(num);
+// let language = prompt("Please enter your native language: ");
 
-//     Bonus: Do the same thing but cube it
+// if (language === "English") {
+//   console.log("Hi");
+// } else if (language === "French") {
+//   console.log("Bonjour");
+// } else if (language === "Norwegian") {
+//   console.log("Hallo");
+// } else if (language === "Turkish") {
+//   console.log("Merhaba");
+// } else if (language === "Portuguese") {
+//   console.log("Oi");
+// }
 
-//     cubeRt = num * num * num;
-//     console.log(cubeRt);
+// 4. Southern or Northern Hemisphere?
+// Store a latitude (e.g. 65.3966675, -43.7251374)
 
-//     7. Get the square root of a number
+// If the latitude is less than 0, log "Southern Hemisphere"
+// If the latitude is greater than 0, log "Northern Hemisphere"
+// Otherwise, log "On the equator"
+// Bonus: Figure out if it is the Eastern or Western Hemisphere too!
 
-//     let num = 25;
-//     numSq = Math.sqrt(num);
-//     console.log(numSq);
+// let latitude = prompt("Enter a latitude: ");
+// let longitude = prompt("Enter a longitude: ");
+
+// if (latitude < 0) {
+//   console.log("Southern Hemisphere");
+// } else if (latitude > 0) {
+//   console.log("Northern Hemisphere");
+// } else console.log("On the Equator Line");
+
+// if (longitude < 0) {
+//   console.log("Western Hemisphere");
+// } else if (longitude > 0) {
+//   console.log("Eastern Hemisphere");
+// } else console.log("On the Greenwich Meridian");
+
+// 5. Year in the 19th, 20th or 21st Century?
+// Store a year (e.g. 1905, 1814)
+
+// If the year is between 1801 and 1900, log "19th Century"
+// If the year is between 1901 and 2000, log "20th Century"
+// If the year is between 2001 and 2100, log "21st Century"
+// Otherwise, log "Sorry, it must be another century"
+
+// let year = prompt("Please enter a year: ");
+
+// if (year > 1801 && year < 1900) {
+//   console.log("19th Century");
+// } else if (year > 1901 && year < 2000) {
+//   console.log("20th Century");
+// } else if (year > 2001 && year < 2100) {
+//   console.log("21st Century");
+// } else {
+//   console.log("Sorry, it must be another century");
+// }
+
+// 6. Greet
+// Store an hour, as 24 hour time (e.g. 9, 16)
+
+// If hour is less than 10, log "Good Morning"
+// Else if the hour is less than 19, log "Good Day"
+// Otherwise, log "Good Evening"
+
+// let hour = prompt("Enter an hour: ");
+
+// if (hour < 10) {
+//   console.log("Good Morning");
+// } else if (hour < 19) {
+//   console.log("Good Day");
+// } else {
+//   console.log("Good Evening");
+// // }
