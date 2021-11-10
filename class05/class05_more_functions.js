@@ -1,4 +1,4 @@
-// Nov 4th (Tuesday) - Lesson 6
+// Nov 4th (Thursday) - Lesson 6
 
 // Some links from tonight:
 // The code: https://github.com/ga-wolf/jsdr-06/tree/main/class_05/code
