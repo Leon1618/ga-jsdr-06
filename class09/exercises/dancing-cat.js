@@ -45,11 +45,7 @@
 
 // Bonus #4: Do whatever you want! Add more images, more animations, etc.
 
-
-
-
 ++++++++++++++++++++++++++++++++++
-
 
 let img = document.querySelector("img");
 let left = 0;
